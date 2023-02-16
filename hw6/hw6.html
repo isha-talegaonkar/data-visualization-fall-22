@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 6 - The State of the State of the State </title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/bubble-chart.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/storytelling.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="header-wrap">
+        <header>
+            <h1>The State of the State of the States</h1>
+            <div>Name: Isha Talegaonkar; E-Mail: isha.talegaonkar@gmail.com; UID: u1317994 </div>
+        </header>
+    </div>
+    <div id="buttons" style="margin-top: 25px">
+        <span style="padding-right:10px">Group by Topic</span>
+        <label class="switch"> 
+            <input type="checkbox" onchange="groupElements(this.checked)">
+            <span class="slider round"></span>
+          </label>
+        <button type="button" class="button button1" id="storybutton" style="margin-left:10px">
+            SHOW EXTREMES
+        </button>
+    </div>
+    <div id="row" class="wrapper" style="display:flex; margin-top: 15px">
+        <div id="bubble-chart" ></div>
+        <div id="tooltip" ></div>
+
+        <table id="table"></table>
+
+    </div>
+
+</body>
+</html>
